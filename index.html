@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TeQtos - Modern Business Solutions">
+    <title>TeQtos - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ai-chat.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Logo in corner -->
+    <a href="index.html" class="fixed top-4 left-4 z-[9999] block">
+        <img src="assets/images/logos/teqtos-logo.svg" alt="TeQtos Logo" class="h-10 w-auto">
+    </a>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-gray-900 shadow-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>Home</a></li>
+                    <li><a href="pages/about.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>About</a></li>
+                    <li><a href="pages/services.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg>Services</a></li>
+                    <li><a href="pages/service-directory.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15a2.25 2.25 0 0 1 2.25 2.25v.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25v-7.5A2.25 2.25 0 0 0 19.5 7.5h-15a2.25 2.25 0 0 0-2.25 2.25v7.5A2.25 2.25 0 0 0 4.5 19.5Z" /></svg>Directory</a></li>
+                    <li><a href="pages/rankings.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .982-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.021c1.384 0 2.735-.56 3.744-1.536A48.108 48.108 0 0 0 12 2.25c2.658 0 5.097-.46 7.374-1.228zm0 0V4.5c0 2.108.966 3.99 2.48 5.228M19.5 2.25c.231.473.438.96.619 1.473m-.619-1.473V2.021c-1.384 0-2.735-.56-3.744-1.536A48.124 48.124 0 0 0 12 2.25c-2.658 0-5.097-.46-7.374-1.228zM9.497 14.25a7.454 7.454 0 0 1-.982-3.172M11.515 4.236c.14-.588.279-1.169.418-1.739a48.078 48.078 0 0 0-.419 1.74zm-8.516.158c.255-.413.513-.826.771-1.229A48.07 48.07 0 0 0 6.227 4.5c.417 0 .833-.046 1.246-.135.426-.09.838-.21 1.246-.357.41-.144.82-.297 1.226-.453.407-.157.81-.32 1.204-.492.4-.177.79-.36 1.17-.554.39-.2.77-.414 1.143-.633.37-.218.73-.445 1.084-.68.354-.236.694-.49 1.02-.757" /></svg>Rankings</a></li>
+                    <li><a href="pages/premium.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" /></svg>Premium</a></li>
+                    <li><a href="pages/contact.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>Contact</a></li>
+                    <li><a href="pages/post-job.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>Post Job</a></li>
+                    <li><a href="pages/tutorials.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 1 18 18a8.967 8.967 0 0 1-6 2.292m0-14.25v14.25" /></svg>Tutorials</a></li>
+                </ul>
+                <div id="desktop-auth-nav" class="hidden md:flex space-x-8">
+                    <a href="pages/auth.html?tab=signin" class="text-gray-300 hover:text-blue-400 transition px-4 py-2">Sign In</a>
+                    <a href="pages/auth.html?tab=signup" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Join Now</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>Home</a>
+                <a href="pages/about.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>About</a>
+                <a href="pages/services.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg>Services</a>
+                <a href="pages/service-directory.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15a2.25 2.25 0 0 1 2.25 2.25v.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25v-7.5A2.25 2.25 0 0 0 19.5 7.5h-15a2.25 2.25 0 0 0-2.25 2.25v7.5A2.25 2.25 0 0 0 4.5 19.5Z" /></svg>Directory</a>
+                <a href="pages/rankings.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .982-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.021c1.384 0 2.735-.56 3.744-1.536A48.108 48.108 0 0 0 12 2.25c2.658 0 5.097-.46 7.374-1.228zm0 0V4.5c0 2.108.966 3.99 2.48 5.228M19.5 2.25c.231.473.438.96.619 1.473m-.619-1.473V2.021c-1.384 0-2.735-.56-3.744-1.536A48.124 48.124 0 0 0 12 2.25c-2.658 0-5.097-.46-7.374-1.228zM9.497 14.25a7.454 7.454 0 0 1-.982-3.172M11.515 4.236c.14-.588.279-1.169.418-1.739a48.078 48.078 0 0 0-.419 1.74zm-8.516.158c.255-.413.513-.826.771-1.229A48.07 48.07 0 0 0 6.227 4.5c.417 0 .833-.046 1.246-.135.426-.09.838-.21 1.246-.357.41-.144.82-.297 1.226-.453.407-.157.81-.32 1.204-.492.4-.177.79-.36 1.17-.554.39-.2.77-.414 1.143-.633.37-.218.73-.445 1.084-.68.354-.236.694-.49 1.02-.757" /></svg>Rankings</a>
+                <a href="pages/premium.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" /></svg>Premium</a>
+                <a href="pages/contact.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>Contact</a>
+                <a href="pages/post-job.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>Post Job</a>
+                <a href="pages/tutorials.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 1 18 18a8.967 8.967 0 0 1-6 2.292m0-14.25v14.25" /></svg>Tutorials</a>
+                <div id="mobile-auth-section" class="border-t border-gray-700 mt-4 pt-4 space-y-2">
+                    <a href="pages/auth.html?tab=signin" class="block w-full text-left text-gray-300 hover:text-blue-400 py-2">Sign In</a>
+                    <a href="pages/auth.html?tab=signup" class="block w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 text-center">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 animate-bg-pan" style="background-image: url('assets/images/backgrounds/bg-web.png');"></div>
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Connect Talent to Global Opportunities</h1>
+            <p class="text-xl mb-8 text-blue-100">Empowering skilled professionals to showcase their expertise, access international markets, and build sustainable careers without borders.</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Join Our Platform
+            </button>
+        </div>
+    </section>
+
+    <!-- Google Ads Banner -->
+    <section class="py-8 bg-gray-800 border-t border-b border-gray-700 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-3" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="bg-gray-900 border border-gray-600 rounded-lg p-4 max-w-2xl mx-auto">
+                    <div class="text-gray-400 mb-1 text-sm">Advertisement</div>
+                    <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-6 flex items-center justify-center min-h-[80px]">
+                        <div class="text-center">
+                            <div class="text-2xl mb-2">📢</div>
+                            <div class="text-gray-400 text-xs">Google Ads Space</div>
+                            <div class="text-gray-500 text-xs">728x90 Banner</div>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">Sponsored Content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-800 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-7" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Why Choose Our Platform</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg shadow hover:shadow-lg transition border border-gray-600">
+                    <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-900 text-blue-400">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Professional Network</h3>
+                    <p class="text-gray-300">Connect with verified professionals and build your career network globally.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow hover:shadow-lg transition border border-gray-600">
+                    <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-900 text-blue-400">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Premium Recommendations</h3>
+                    <p class="text-gray-300">Get personalized job recommendations and career opportunities tailored to your profile.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow hover:shadow-lg transition border border-gray-600">
+                    <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-900 text-blue-400">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Smart Alerts</h3>
+                    <p class="text-gray-300">Receive instant email notifications for relevant job opportunities and network updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Candidates Showcase -->
+    <section class="py-20 bg-gradient-to-br from-gray-800 to-gray-900 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">🏆 Top-Ranked Professionals</h2>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">Meet our highest-rated technicians and freelancers who excel in their fields and consistently deliver exceptional results</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Candidate 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="relative">
+                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-32 flex items-center justify-center">
+                            <div class="text-center">
+                                <img src="assets/images/avatars/avatar-1.svg" alt="Marcus Johnson" class="w-16 h-16 rounded-full border-4 border-white mb-2">
+                                <div class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold inline-block">
+                                    🏆 PLATINUM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                            <div class="w-16 h-16 bg-gray-700 border-4 border-gray-900 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 pb-6 px-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Marcus Johnson</h3>
+                        <p class="text-blue-400 font-semibold mb-3">AV Systems Engineer</p>
+                        <p class="text-gray-400 text-sm mb-4">Specializing in large-scale audio-visual installations and system integration</p>
+
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs">CTS Certified</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">5★ Rating</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-400">150+</div>
+                                <div class="text-xs text-gray-400">Projects</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-green-400">98%</div>
+                                <div class="text-xs text-gray-400">Success Rate</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-purple-400">4.9</div>
+                                <div class="text-xs text-gray-400">Avg Rating</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-center gap-1 mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">Audio Engineering</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">System Integration</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">Live Events</span>
+                        </div>
+
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Candidate 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="relative">
+                        <div class="bg-gradient-to-r from-green-600 to-teal-600 h-32 flex items-center justify-center">
+                            <div class="text-center">
+                                <img src="assets/images/avatars/avatar-2.svg" alt="Sarah Chen" class="w-16 h-16 rounded-full border-4 border-white mb-2">
+                                <div class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold inline-block">
+                                    🏆 GOLD
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                            <div class="w-16 h-16 bg-gray-700 border-4 border-gray-900 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🌟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 pb-6 px-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Sarah Chen</h3>
+                        <p class="text-blue-400 font-semibold mb-3">Lighting Designer</p>
+                        <p class="text-gray-400 text-sm mb-4">Expert in architectural lighting design and intelligent lighting control systems</p>
+
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs">ETCP Certified</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">5★ Rating</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-400">89</div>
+                                <div class="text-xs text-gray-400">Projects</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-green-400">96%</div>
+                                <div class="text-xs text-gray-400">Success Rate</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-purple-400">4.8</div>
+                                <div class="text-xs text-gray-400">Avg Rating</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-center gap-1 mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">Lighting Design</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">DMX Programming</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">LED Technology</span>
+                        </div>
+
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Candidate 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="relative">
+                        <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-32 flex items-center justify-center">
+                            <div class="text-center">
+                                <img src="assets/images/avatars/default-avatar.svg" alt="David Rodriguez" class="w-16 h-16 rounded-full border-4 border-white mb-2">
+                                <div class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold inline-block">
+                                    🏆 SILVER
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                            <div class="w-16 h-16 bg-gray-700 border-4 border-gray-900 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🔥</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 pb-6 px-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">David Rodriguez</h3>
+                        <p class="text-blue-400 font-semibold mb-3">Network Infrastructure Specialist</p>
+                        <p class="text-gray-400 text-sm mb-4">Specialized in AV network design, IP-based systems, and infrastructure optimization</p>
+
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs">CCNA Certified</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">5★ Rating</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-400">67</div>
+                                <div class="text-xs text-gray-400">Projects</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-green-400">94%</div>
+                                <div class="text-xs text-gray-400">Success Rate</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-purple-400">4.7</div>
+                                <div class="text-xs text-gray-400">Avg Rating</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-center gap-1 mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">Network Design</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">IP Systems</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">Cybersecurity</span>
+                        </div>
+
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center">
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-white mb-4">Ready to Stand Out?</h3>
+                    <p class="text-gray-300 mb-6">Join our platform and climb the ranks to become a featured professional. Build your reputation and attract premium opportunities.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="pages/auth.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                            Join as Professional
+                        </a>
+                        <a href="pages/rankings.html" class="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 hover:text-white transition">
+                            View All Rankings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Feed Section -->
+    <section class="py-20 bg-gray-900 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex justify-between items-center mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-2">Latest Job Opportunities</h2>
+                    <p class="text-gray-400">Discover exciting career opportunities posted by leading companies</p>
+                </div>
+                <a href="pages/post-job.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-200">
+                    Post a Job
+                </a>
+            </div>
+
+            <div id="jobFeed" class="grid gap-6">
+                <!-- Job cards will be loaded here by JavaScript -->
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#" class="text-blue-400 hover:text-blue-300 font-medium">View All Job Opportunities →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Tutorials Section -->
+    <section class="py-20 bg-gray-800 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Career Development Tutorials</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Learn from industry experts and boost your career with our curated video tutorials</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Tutorial Video 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-800 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-red-500 text-6xl mb-4">▶️</div>
+                            <div class="text-gray-400">YouTube Video</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2">Building a Strong LinkedIn Profile</h3>
+                        <p class="text-gray-400 text-sm mb-4">Learn how to create a professional profile that attracts recruiters and showcases your skills effectively.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">12 min watch</span>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial Video 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-800 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-red-500 text-6xl mb-4">▶️</div>
+                            <div class="text-gray-400">YouTube Video</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2">Technical Interview Preparation</h3>
+                        <p class="text-gray-400 text-sm mb-4">Master common technical interview questions and learn effective strategies for success.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">18 min watch</span>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial Video 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-800 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-red-500 text-6xl mb-4">▶️</div>
+                            <div class="text-gray-400">YouTube Video</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2">Networking Skills for Tech Professionals</h3>
+                        <p class="text-gray-400 text-sm mb-4">Develop essential networking skills to build meaningful connections in the tech industry.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">15 min watch</span>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advertisement Sidebar -->
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="md:col-span-1">
+                    <div class="bg-gray-900 border border-gray-600 rounded-lg p-6 text-center">
+                        <div class="text-gray-400 mb-2 text-sm">Sponsored</div>
+                        <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-8 flex items-center justify-center min-h-[200px]">
+                            <div class="text-center">
+                                <div class="text-3xl mb-4">📱</div>
+                                <div class="text-gray-400 text-sm">Ad Space</div>
+                                <div class="text-gray-500 text-xs mt-1">160x600</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 text-center">
+                    <div class="bg-gray-900 border border-gray-600 rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-white mb-4">More Learning Resources</h3>
+                        <p class="text-gray-400 mb-6">Access our complete library of career development videos, webinars, and expert interviews.</p>
+                        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-200">
+                            <a href="pages/tutorials.html">View All Tutorials</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:col-span-1">
+                    <div class="bg-gray-900 border border-gray-600 rounded-lg p-6 text-center">
+                        <div class="text-gray-400 mb-2 text-sm">Advertisement</div>
+                        <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-8 flex items-center justify-center min-h-[200px]">
+                            <div class="text-center">
+                                <div class="text-3xl mb-4">💼</div>
+                                <div class="text-gray-400 text-sm">Ad Space</div>
+                                <div class="text-gray-500 text-xs mt-1">160x600</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-900 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">What Our Professionals Say</h2>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">Hear from successful technicians who have transformed their careers through our platform</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+                    <img src="assets/images/testimonials/testimonial-bg.svg" alt="Testimonial background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="assets/images/avatars/avatar-1.svg" alt="Marcus Johnson" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="text-white font-semibold">Marcus Johnson</h4>
+                                <p class="text-gray-400 text-sm">AV Systems Engineer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"TeQtos opened doors I never thought possible. Within months of joining, I landed international projects that boosted my career exponentially."</p>
+                        <div class="flex text-yellow-400 mt-4">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+                    <img src="assets/images/testimonials/testimonial-bg.svg" alt="Testimonial background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="assets/images/avatars/avatar-2.svg" alt="Sarah Chen" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="text-white font-semibold">Sarah Chen</h4>
+                                <p class="text-gray-400 text-sm">Lighting Designer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"The certification guidance and global visibility helped me secure premium contracts. My income doubled within a year!"</p>
+                        <div class="flex text-yellow-400 mt-4">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+                    <img src="assets/images/testimonials/testimonial-bg.svg" alt="Testimonial background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="assets/images/avatars/default-avatar.svg" alt="David Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="text-white font-semibold">David Rodriguez</h4>
+                                <p class="text-gray-400 text-sm">Network Specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"From local gigs to international projects - TeQtos made it happen. The platform's ranking system motivated me to continuously improve."</p>
+                        <div class="flex text-yellow-400 mt-4">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="py-20 bg-gray-900 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-4 text-white">Choose Your Membership</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Unlock premium features and accelerate your career with our membership plans</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Employer Plan -->
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 hover:border-gray-600 transition">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Employer</h3>
+                        <div class="text-4xl font-bold text-blue-400 mb-2">$9.99</div>
+                        <p class="text-gray-400">per month</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Post jobs and projects
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Search verified professionals
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Talent matching tools
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <span class="text-gray-600 mr-2">✗</span>
+                            Priority candidate highlighting
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <span class="text-gray-600 mr-2">✗</span>
+                            Advanced analytics
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-700 text-white py-3 rounded-lg font-semibold hover:bg-gray-600 transition">
+                        Start Employer Access
+                    </button>
+                </div>
+
+                <!-- Technician Plan -->
+                <div class="bg-gradient-to-br from-blue-900 to-blue-800 p-8 rounded-lg border-2 border-blue-500 relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Technician</h3>
+                        <div class="text-4xl font-bold text-blue-400 mb-2">$19</div>
+                        <p class="text-gray-300">per month</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-white">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Everything in Employer
+                        </li>
+                        <li class="flex items-center text-white">
+                            <span class="text-green-400 mr-2">✓</span>
+                            AI-powered recommendations
+                        </li>
+                        <li class="flex items-center text-white">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Instant email alerts
+                        </li>
+                        <li class="flex items-center text-white">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Priority profile visibility
+                        </li>
+                        <li class="flex items-center text-white">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Advanced analytics
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                        Start Technician Plan
+                    </button>
+                </div>
+
+                <!-- Service Provider Plan -->
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 hover:border-gray-600 transition">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Service Provider</h3>
+                        <div class="text-4xl font-bold text-blue-400 mb-2">$24.99</div>
+                        <p class="text-gray-400">per month</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Everything in Technician
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Service directory listing
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Business profile showcase
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Priority project matching
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-green-400 mr-2">✓</span>
+                            Dedicated support
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-700 text-white py-3 rounded-lg font-semibold hover:bg-gray-600 transition">
+                        Start Provider Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Ad Banner -->
+    <section class="py-6 bg-gray-800 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-3" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-gray-900 border border-gray-600 rounded-lg p-4 max-w-4xl mx-auto">
+                <div class="flex items-center justify-center">
+                    <div class="bg-gray-800 border border-dashed border-gray-600 rounded-lg px-8 py-4 flex items-center justify-center min-h-[60px] flex-1 max-w-md mx-4">
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm">Sponsored Content</div>
+                            <div class="text-gray-500 text-xs">Banner Ad Space</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-600 bg-opacity-80"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl font-bold mb-4">Ready to Build Your Professional Network?</h2>
+            <p class="mb-8 text-blue-100">Join thousands of professionals who are advancing their careers with premium recommendations and smart alerts.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Start Free Trial
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    <a href="pages/premium.html">View Premium Features</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-05" style="background-image: url('assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">TeQtos</h4>
+                    <p class="text-sm">Connecting talent to global opportunities, empowering skilled professionals worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="pages/about.html" class="hover:text-white">About</a></li>
+                        <li><a href="pages/services.html" class="hover:text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <p class="text-sm">Email: info@teqtos.com</p>
+                    <p class="text-sm">Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="flex items-center hover:text-white"><svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Twitter</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 TeQtos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/job-feed.js"></script>
+    <script src="js/ai-chat.js"></script>
+</body>
+</html>

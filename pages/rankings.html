@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TeQtos Technician Ranking System - Professional certification levels for AV technicians worldwide">
+    <title>Technician Rankings - TeQtos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ai-chat.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- Logo in corner -->
+    <a href="../index.html" class="fixed top-4 left-4 z-[9999] block">
+        <img src="../assets/images/logos/teqtos-logo.svg" alt="TeQtos Logo" class="h-10 w-auto">
+    </a>
+    <!-- Navigation -->
+    <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a>
+                    <a href="about.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a>
+                    <a href="services.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a>
+                    <a href="service-directory.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a>
+                    <a href="rankings.html" class="flex items-center text-blue-400 border-b-2 border-blue-400 transition"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a>
+                    <a href="premium.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a>
+                    <a href="contact.html" class="flex items-center text-gray-300 hover:text-white transition"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a>
+                    <a href="auth.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Sign In</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuButton" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="../index.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a>
+                <a href="services.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a>
+                <a href="service-directory.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a>
+                <a href="rankings.html" class="block py-2 text-blue-400 transition flex items-center"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a>
+                <a href="premium.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-white transition flex items-center"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a>
+                <a href="auth.html" class="block py-2 bg-blue-500 text-white px-4 py-2 rounded-lg mt-2 inline-block">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 py-20 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 bg-opacity-95"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Technician <span class="text-blue-400">Ranking System</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Professional certification levels that showcase your expertise and unlock premium opportunities.
+                Build trust, gain visibility, and access higher-paying projects.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="auth.html" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                    Get Certified
+                </a>
+                <a href="premium.html" class="border border-blue-400 text-blue-400 px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 hover:text-white transition">
+                    View Premium Jobs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking Levels -->
+    <section class="py-20 bg-gray-900 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">4 Professional Levels</h2>
+                <p class="text-gray-400 text-lg">Progress through certifications to unlock better opportunities</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Level 1: Beginner -->
+                <div class="bg-gradient-to-br from-green-900 to-green-800 p-6 rounded-lg border border-green-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🟢</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Level 1</h3>
+                        <h4 class="text-green-300 font-semibold">Beginner Technician</h4>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Who they are:</h5>
+                            <p class="text-gray-300 text-sm">New to AV/freelancing, basic installations, support roles</p>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Requirements:</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• No certification OR entry-level certs</li>
+                                <li>• Basic training from AVIXA</li>
+                                <li>• Entry courses from Extron</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Platform Access:</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• Small/local jobs</li>
+                                <li>• Assistant roles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 2: Certified -->
+                <div class="bg-gradient-to-br from-blue-900 to-blue-800 p-6 rounded-lg border border-blue-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🔵</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Level 2</h3>
+                        <h4 class="text-blue-300 font-semibold">Certified Technician</h4>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Who they are:</h5>
+                            <p class="text-gray-300 text-sm">Skilled and employable internationally</p>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Requirements (ANY 1-2):</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• CTS from AVIXA</li>
+                                <li>• Network+ from CompTIA</li>
+                                <li>• Dante Level 2 from Dante</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Platform Access:</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• Standard freelance jobs</li>
+                                <li>• Remote contracts</li>
+                                <li>• Verified badge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 3: Advanced -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 p-6 rounded-lg border border-purple-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🟣</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Level 3</h3>
+                        <h4 class="text-purple-300 font-semibold">Advanced Specialist</h4>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Who they are:</h5>
+                            <p class="text-gray-300 text-sm">Highly skilled technicians with specialization</p>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Requirements (ANY 2-3):</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• CTS-I or CTS-D</li>
+                                <li>• CCNA from Cisco</li>
+                                <li>• Crestron/Extron certs</li>
+                                <li>• Biamp/Shure advanced certs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Platform Access:</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• High-paying gigs</li>
+                                <li>• International contracts</li>
+                                <li>• System integration roles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 4: Elite -->
+                <div class="bg-gradient-to-br from-red-900 to-red-800 p-6 rounded-lg border border-red-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🔴</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Level 4</h3>
+                        <h4 class="text-red-300 font-semibold">Elite Technician</h4>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Who they are:</h5>
+                            <p class="text-gray-300 text-sm">Industry-level experts</p>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Requirements (STRICT):</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• CTS + specialization</li>
+                                <li>• Strong networking (CCNA+)</li>
+                                <li>• High-level manufacturer cert</li>
+                                <li>• Proven experience + reviews</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-2">Platform Access:</h5>
+                            <ul class="text-gray-300 text-sm space-y-1">
+                                <li>• Premium/global jobs</li>
+                                <li>• Direct hiring by companies</li>
+                                <li>• Featured profiles</li>
+                                <li>• Highest earnings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Access System -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Premium Job Unlock System</h2>
+                <p class="text-gray-400 text-lg">Better certifications = access to better-paying jobs</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Open Jobs -->
+                <div class="bg-gray-700 p-6 rounded-lg border border-gray-600">
+                    <div class="text-center mb-6">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">ALL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Open Jobs</h3>
+                        <h4 class="text-green-400 font-semibold">Everyone Access</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-gray-300 text-sm">
+                            <h5 class="text-white font-semibold mb-1">Examples:</h5>
+                            <ul class="space-y-1">
+                                <li>• Basic installations</li>
+                                <li>• Local gigs</li>
+                                <li>• Low-budget freelance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Jobs -->
+                <div class="bg-gray-700 p-6 rounded-lg border border-blue-500 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">LOCKED</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">🔒</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Verified Jobs</h3>
+                        <h4 class="text-blue-400 font-semibold">Requires Certification</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-gray-300 text-sm">
+                            <h5 class="text-white font-semibold mb-1">Requirements:</h5>
+                            <p class="mb-2">At least 1 recognized certification</p>
+                            <h5 class="text-white font-semibold mb-1">Examples:</h5>
+                            <ul class="space-y-1">
+                                <li>• CTS, Network+, Dante L2</li>
+                            </ul>
+                            <p class="text-green-400 font-semibold mt-2">Pay better & build trust</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Jobs -->
+                <div class="bg-gray-700 p-6 rounded-lg border border-purple-500 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">LOCKED</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">🔒</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Professional Jobs</h3>
+                        <h4 class="text-purple-400 font-semibold">Level 3 Required</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-gray-300 text-sm">
+                            <h5 class="text-white font-semibold mb-1">Examples:</h5>
+                            <ul class="space-y-1">
+                                <li>• Corporate AV installs</li>
+                                <li>• AV-over-IP setups</li>
+                                <li>• Conference integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Jobs -->
+                <div class="bg-gray-700 p-6 rounded-lg border border-red-500 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">LOCKED</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">🔒</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Premium Jobs</h3>
+                        <h4 class="text-red-400 font-semibold">Elite Level Required</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-gray-300 text-sm">
+                            <h5 class="text-white font-semibold mb-1">Examples:</h5>
+                            <ul class="space-y-1">
+                                <li>• International projects</li>
+                                <li>• Government work</li>
+                                <li>• High-budget freelancing</li>
+                            </ul>
+                            <p class="text-yellow-400 font-semibold mt-2">Highest earnings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Score System -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Skill Score System</h2>
+                <p class="text-gray-400 text-lg">Automatic ranking based on your certifications</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">Certification Points</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-gray-700 rounded">
+                                <span class="text-white">CTS (AVIXA)</span>
+                                <span class="text-blue-400 font-bold">+50 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-700 rounded">
+                                <span class="text-white">CCNA (Cisco)</span>
+                                <span class="text-blue-400 font-bold">+70 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-700 rounded">
+                                <span class="text-white">Crestron Certified</span>
+                                <span class="text-blue-400 font-bold">+80 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-700 rounded">
+                                <span class="text-white">CTS-I or CTS-D</span>
+                                <span class="text-blue-400 font-bold">+100 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-700 rounded">
+                                <span class="text-white">Network+ (CompTIA)</span>
+                                <span class="text-blue-400 font-bold">+40 points</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">Ranking Thresholds</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-green-900 rounded border border-green-700">
+                                <span class="text-white">Level 1: Beginner</span>
+                                <span class="text-green-300 font-bold">0-49 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-blue-900 rounded border border-blue-700">
+                                <span class="text-white">Level 2: Certified</span>
+                                <span class="text-blue-300 font-bold">50-149 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-purple-900 rounded border border-purple-700">
+                                <span class="text-white">Level 3: Advanced</span>
+                                <span class="text-purple-300 font-bold">150-249 points</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-red-900 rounded border border-red-700">
+                                <span class="text-white">Level 4: Elite</span>
+                                <span class="text-red-300 font-bold">250+ points</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 p-4 bg-blue-900 rounded-lg border border-blue-700">
+                    <h4 class="text-blue-300 font-semibold mb-2">💡 Pro Tip</h4>
+                    <p class="text-gray-300">Your total score determines your ranking automatically. Add more certifications to unlock higher levels and better job opportunities!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upgrade Motivation -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Level Up?</h2>
+            <div class="bg-gradient-to-r from-blue-900 to-purple-900 p-8 rounded-lg border border-blue-500">
+                <div class="text-6xl mb-4">🚀</div>
+                <h3 class="text-2xl font-bold text-white mb-4">You're Just 1 Certification Away</h3>
+                <p class="text-gray-300 mb-6">
+                    From unlocking premium jobs to gaining employer trust, certifications open doors to higher-paying opportunities.
+                    Join thousands of technicians who are already leveling up their careers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="auth.html" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                        Start Your Journey
+                    </a>
+                    <a href="premium.html" class="border border-purple-400 text-purple-400 px-8 py-3 rounded-lg font-semibold hover:bg-purple-400 hover:text-white transition">
+                        View Premium Benefits
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">TeQtos</h3>
+                    <p class="text-gray-400">Connecting talent to global opportunities through verified certifications and professional networking.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="rankings.html" class="hover:text-white transition">Rankings</a></li>
+                        <li><a href="premium.html" class="hover:text-white transition">Premium</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Certification Guide</a></li>
+                        <li><a href="#" class="hover:text-white transition">Employer Portal</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TeQtos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ai-chat.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\simel\TeQtos\pages\rankings.html

@@ -1,0 +1,22 @@
+{
+  "name": "teqtos-business-website",
+  "version": "1.0.0",
+  "description": "Modern business website with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server",
+    "build": "echo \"No build required for this static site\"",
+    "vercel-build": "echo \"No build required for this static site\""
+  },
+  "keywords": [
+    "business",
+    "website",
+    "responsive",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Debug Test</title>
+</head>
+<body>
+    <h1>Authentication Debug Test</h1>
+    <button onclick="testAuth()">Test Authentication</button>
+    <div id="result"></div>
+
+    <script>
+        function testAuth() {
+            const resultDiv = document.getElementById('result');
+
+            // Test 1: Store user data
+            const userData = {
+                firstName: 'John',
+                lastName: 'Doe',
+                email: 'john@example.com',
+                accountType: 'freelancer',
+                isLoggedIn: true,
+                signupTime: new Date().toISOString()
+            };
+
+            localStorage.setItem('teqtos_user', JSON.stringify(userData));
+            resultDiv.innerHTML += '<p>✓ User data stored successfully</p>';
+
+            // Test 2: Retrieve user data
+            const retrievedData = localStorage.getItem('teqtos_user');
+            if (retrievedData) {
+                const user = JSON.parse(retrievedData);
+                resultDiv.innerHTML += `<p>✓ User data retrieved: ${user.firstName} ${user.lastName} (${user.email})</p>`;
+            } else {
+                resultDiv.innerHTML += '<p>✗ Failed to retrieve user data</p>';
+            }
+
+            // Test 3: Check navigation update (simulate)
+            const desktopNav = document.createElement('div');
+            desktopNav.id = 'desktop-auth-nav';
+            desktopNav.innerHTML = '<a href="#">Sign In</a><a href="#">Join Now</a>';
+            document.body.appendChild(desktopNav);
+
+            // Simulate the updateNavForLoggedInUser function
+            const nav = document.getElementById('desktop-auth-nav');
+            if (nav && retrievedData) {
+                const user = JSON.parse(retrievedData);
+                nav.innerHTML = `<span>Welcome, ${user.firstName || user.email.split('@')[0]}!</span><button onclick="logout()">Sign Out</button>`;
+                resultDiv.innerHTML += '<p>✓ Navigation updated successfully</p>';
+            }
+
+            resultDiv.innerHTML += '<p><strong>All tests completed!</strong></p>';
+        }
+
+        function logout() {
+            localStorage.removeItem('teqtos_user');
+            location.reload();
+        }
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\simel\TeQtos\debug-test.html
