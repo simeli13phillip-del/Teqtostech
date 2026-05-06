@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeQtos Steamer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>TeQtos Steamer</h1>
+      <p>Upload a track to extract vocals and instruments for DJ tools.</p>
+    </header>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alerts">
+          {% for message in messages %}
+            <div class="alert">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form id="upload-form" action="/separate" method="post" enctype="multipart/form-data">
+      <div id="drop-zone" class="drop-zone">
+        <p>Drag & drop your audio file here</p>
+        <p>or</p>
+        <button type="button" id="browse-button">Browse files</button>
+        <input id="audio-file" name="audio_file" type="file" accept="audio/*" hidden />
+        <div id="file-name" class="file-name">No file selected</div>
+      </div>
+
+      <label class="stems-label" for="stems">Select stems:</label>
+      <select id="stems" name="stems">
+        <option value="2">2 stems (vocals + accompaniment)</option>
+        <option value="4">4 stems (vocals, drums, bass, other)</option>
+      </select>
+
+      <button class="submit-button" type="submit">Separate audio</button>
+    </form>
+
+    <div id="progress" class="progress" style="display: none;">
+      <p>Separating audio... This can take several minutes on CPU. Please keep the page open.</p>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <div id="results" class="results" style="display: none;">
+      <h2>Separated Stems</h2>
+      <div id="stems-container"></div>
+      <button id="download-button" class="submit-button">Download ZIP</button>
+    </div>
+
+    <footer>
+      <p>Results download as a ZIP file containing separate audio stems.</p>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

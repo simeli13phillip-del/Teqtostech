@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" rx="12" fill="#1f2937"/>
+  <circle cx="60" cy="60" r="25" fill="#3b82f6" opacity="0.2"/>
+  <circle cx="340" cy="140" r="35" fill="#10b981" opacity="0.2"/>
+  <path d="M50 100 L350 100 L350 120 L50 120 Z" fill="#374151"/>
+  <path d="M50 130 L280 130 L280 150 L50 150 Z" fill="#374151"/>
+  <text x="50" y="115" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af">"This platform changed my career..."</text>
+  <text x="50" y="145" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">- Sarah Johnson, AV Technician</text>
+</svg>

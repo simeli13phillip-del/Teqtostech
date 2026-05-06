@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TeQtos - Get in Touch">
+    <title>Contact Us - TeQtos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ai-chat.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Logo in corner -->
+    <a href="../index.html" class="fixed top-4 left-4 z-[9999] block">
+        <img src="../assets/images/logos/teqtos-logo.svg" alt="TeQtos Logo" class="h-10 w-auto">
+    </a>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-gray-900 shadow-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="../index.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a></li>
+                    <li><a href="about.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a></li>
+                    <li><a href="services.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a></li>
+                    <li><a href="service-directory.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a></li>
+                    <li><a href="rankings.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a></li>
+                    <li><a href="premium.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a></li>
+                    <li><a href="contact.html" class="flex items-center text-blue-400 border-b-2 border-blue-400 transition"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a></li>
+                    <li><a href="post-job.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/post-job.svg" alt="Post Job icon" class="h-5 w-5 mr-2">Post Job</a></li>
+                    <li><a href="tutorials.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/tutorials.svg" alt="Tutorials icon" class="h-5 w-5 mr-2">Tutorials</a></li>
+                </ul>
+                <div class="hidden md:flex space-x-8">
+                    <a href="auth.html" class="text-gray-300 hover:text-blue-400 transition px-4 py-2">Sign In</a>
+                    <a href="auth.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Join Now</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="../index.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a>
+                <a href="services.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a>
+                <a href="service-directory.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a>
+                <a href="rankings.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a>
+                <a href="premium.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a>
+                <a href="contact.html" class="block py-2 text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a>
+                <a href="post-job.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/post-job.svg" alt="Post Job icon" class="h-5 w-5 mr-2">Post Job</a>
+                <a href="tutorials.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/tutorials.svg" alt="Tutorials icon" class="h-5 w-5 mr-2">Tutorials</a>
+                <div class="border-t border-gray-700 mt-4 pt-4 space-y-2">
+                    <a href="auth.html" class="block w-full text-left text-gray-300 hover:text-blue-400 py-2">Sign In</a>
+                    <a href="auth.html" class="block w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 text-center">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-blue-600 text-white py-12 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-600 bg-opacity-90"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-blue-100 mt-2">We'd love to hear from you. Get in touch with our team today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Send us a Message</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-800 text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-800 text-white">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-300 font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-800 text-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-800 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="text-blue-400 text-2xl mr-4"></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2 text-white">Phone</h3>
+                                <p class="text-gray-300">(555) 123-4567<br>Monday - Friday: 9am - 5pm EST</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-400 text-2xl mr-4">✉️</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2 text-white">Email</h3>
+                                <p class="text-gray-300">info@teqtos.com<br>support@teqtos.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-400 text-2xl mr-4">🕐</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2 text-white">Business Hours</h3>
+                                <p class="text-gray-300">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (Hidden by default) -->
+    <div id="successMessage" class="hidden fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg">
+        Thank you! We'll get back to you soon.
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">TeQtos</h4>
+                    <p class="text-sm">Connecting talent to global opportunities, empowering skilled professionals worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <p class="text-sm">Email: info@teqtos.com</p>
+                    <p class="text-sm">Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/twitter.svg" alt="Twitter icon" class="h-4 w-4 mr-2">Twitter</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/linkedin.svg" alt="LinkedIn icon" class="h-4 w-4 mr-2">LinkedIn</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/facebook.svg" alt="Facebook icon" class="h-4 w-4 mr-2">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 TeQtos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ai-chat.js"></script>
+</body>
+</html>

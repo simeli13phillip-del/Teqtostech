@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Career Development Tutorials - TeQtos Professional Network">
+    <title>Career Tutorials - TeQtos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ai-chat.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Logo in corner -->
+    <a href="../index.html" class="fixed top-4 left-4 z-[9999] block">
+        <img src="../assets/images/logos/teqtos-logo.svg" alt="TeQtos Logo" class="h-10 w-auto">
+    </a>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-gray-900 shadow-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="../index.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a></li>
+                    <li><a href="about.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a></li>
+                    <li><a href="services.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a></li>
+                    <li><a href="service-directory.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a></li>
+                    <li><a href="rankings.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a></li>
+                    <li><a href="premium.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a></li>
+                    <li><a href="contact.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a></li>
+                    <li><a href="post-job.html" class="flex items-center text-gray-300 hover:text-blue-400 transition"><img src="../assets/images/icons/navigation/post-job.svg" alt="Post Job icon" class="h-5 w-5 mr-2">Post Job</a></li>
+                    <li><a href="tutorials.html" class="flex items-center text-blue-400 transition"><img src="../assets/images/icons/navigation/tutorials.svg" alt="Tutorials icon" class="h-5 w-5 mr-2">Tutorials</a></li>
+                </ul>
+                <div class="hidden md:flex space-x-8">
+                    <a href="auth.html" class="text-gray-300 hover:text-blue-400 transition px-4 py-2">Sign In</a>
+                    <a href="auth.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Join Now</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="../index.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/home.svg" alt="Home icon" class="h-5 w-5 mr-2">Home</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/about.svg" alt="About icon" class="h-5 w-5 mr-2">About</a>
+                <a href="services.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/services.svg" alt="Services icon" class="h-5 w-5 mr-2">Services</a>
+                <a href="service-directory.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/service-directory.svg" alt="Service Directory icon" class="h-5 w-5 mr-2">Directory</a>
+                <a href="rankings.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/rankings.svg" alt="Rankings icon" class="h-5 w-5 mr-2">Rankings</a>
+                <a href="premium.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/premium.svg" alt="Premium icon" class="h-5 w-5 mr-2">Premium</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/contact.svg" alt="Contact icon" class="h-5 w-5 mr-2">Contact</a>
+                <a href="post-job.html" class="block py-2 text-gray-300 hover:text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/post-job.svg" alt="Post Job icon" class="h-5 w-5 mr-2">Post Job</a>
+                <a href="tutorials.html" class="block py-2 text-blue-400 flex items-center"><img src="../assets/images/icons/navigation/tutorials.svg" alt="Tutorials icon" class="h-5 w-5 mr-2">Tutorials</a>
+                <div class="border-t border-gray-700 mt-4 pt-4 space-y-2">
+                    <a href="auth.html" class="block w-full text-left text-gray-300 hover:text-blue-400 py-2">Sign In</a>
+                    <a href="auth.html" class="block w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 text-center">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-20 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 bg-opacity-90"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Career Development Tutorials</h1>
+            <p class="text-xl mb-8 text-red-100">Master new skills, advance your career, and stay ahead in the competitive job market</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    🎥 Watch Latest Videos
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition">
+                    📚 Browse Categories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Categories -->
+    <section class="py-16 bg-gray-800 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('../assets/images/backgrounds/bg web.png');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Explore Tutorial Categories</h2>
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-700 transition border border-gray-600">
+                    <div class="text-4xl mb-4">💼</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Job Search</h3>
+                    <p class="text-gray-400 text-sm">Resume building, interview prep, and job hunting strategies</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-700 transition border border-gray-600">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Career Growth</h3>
+                    <p class="text-gray-400 text-sm">Skill development, networking, and advancement tips</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-700 transition border border-gray-600">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Technical Skills</h3>
+                    <p class="text-gray-400 text-sm">Programming, certifications, and industry-specific training</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-700 transition border border-gray-600">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Entrepreneurship</h3>
+                    <p class="text-gray-400 text-sm">Starting a business, freelancing, and business development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tutorials -->
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Featured Video Tutorials</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tutorial 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Building a Strong LinkedIn Profile</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            12:34
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium">Job Search</span>
+                            <span class="text-gray-400 text-sm ml-2">• 2.1K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Learn how to optimize your LinkedIn profile to attract recruiters and showcase your professional brand effectively.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">TeQtos Academy</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Technical Interview Mastery</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            18:45
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-600 text-white px-2 py-1 rounded text-xs font-medium">Career Growth</span>
+                            <span class="text-gray-400 text-sm ml-2">• 1.8K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Master the art of technical interviews with proven strategies and practice techniques.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">Expert Insights</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Networking for Tech Professionals</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            15:22
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-600 text-white px-2 py-1 rounded text-xs font-medium">Networking</span>
+                            <span class="text-gray-400 text-sm ml-2">• 3.2K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Build meaningful professional connections and expand your network in the tech industry.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">Career Coaches</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 4 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Freelancing Success Guide</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            22:10
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-orange-600 text-white px-2 py-1 rounded text-xs font-medium">Entrepreneurship</span>
+                            <span class="text-gray-400 text-sm ml-2">• 2.7K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Everything you need to know about starting and succeeding as a freelance professional.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">Business Academy</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 5 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Certifications That Matter</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            16:58
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-teal-600 text-white px-2 py-1 rounded text-xs font-medium">Technical Skills</span>
+                            <span class="text-gray-400 text-sm ml-2">• 4.1K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Discover the most valuable IT certifications and how to prepare for them effectively.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">Cert Academy</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 6 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+                    <div class="aspect-video bg-gray-700 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-red-500 text-6xl mb-4">▶️</div>
+                                <div class="text-white text-lg font-semibold">Salary Negotiation Tactics</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                            14:33
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-pink-600 text-white px-2 py-1 rounded text-xs font-medium">Job Search</span>
+                            <span class="text-gray-400 text-sm ml-2">• 2.9K views</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-4">Learn effective salary negotiation strategies to get the compensation you deserve.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">
+                                    T
+                                </div>
+                                <span class="text-gray-400 text-sm">Negotiation Pro</span>
+                            </div>
+                            <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Sponsored Content</h2>
+                <p class="text-gray-400">Premium learning resources from our partners</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Ad 1 -->
+                <div class="bg-gray-900 border border-gray-600 rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Online Learning Platform</h3>
+                    <p class="text-gray-400 text-sm mb-4">Access thousands of courses from top instructors worldwide</p>
+                    <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-6 mb-4">
+                        <div class="text-gray-400 text-sm">Advertisement Space</div>
+                        <div class="text-gray-500 text-xs">300x250</div>
+                    </div>
+                    <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Learn More</button>
+                </div>
+
+                <!-- Ad 2 -->
+                <div class="bg-gray-900 border border-gray-600 rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Coding Bootcamp</h3>
+                    <p class="text-gray-400 text-sm mb-4">Accelerate your career with intensive programming courses</p>
+                    <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-6 mb-4">
+                        <div class="text-gray-400 text-sm">Advertisement Space</div>
+                        <div class="text-gray-500 text-xs">300x250</div>
+                    </div>
+                    <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Learn More</button>
+                </div>
+
+                <!-- Ad 3 -->
+                <div class="bg-gray-900 border border-gray-600 rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Data Science Academy</h3>
+                    <p class="text-gray-400 text-sm mb-4">Master data analysis and machine learning skills</p>
+                    <div class="bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg p-6 mb-4">
+                        <div class="text-gray-400 text-sm">Advertisement Space</div>
+                        <div class="text-gray-500 text-xs">300x250</div>
+                    </div>
+                    <button class="text-blue-400 hover:text-blue-300 text-sm font-medium">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">TeQtos</h4>
+                    <p class="text-sm">Connecting talent to global opportunities, empowering skilled professionals worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                        <li><a href="tutorials.html" class="hover:text-white">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <p class="text-sm">Email: info@teqtos.com</p>
+                    <p class="text-sm">Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/twitter.svg" alt="Twitter icon" class="h-4 w-4 mr-2">Twitter</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/linkedin.svg" alt="LinkedIn icon" class="h-4 w-4 mr-2">LinkedIn</a></li>
+                        <li><a href="#" class="flex items-center hover:text-white"><img src="../assets/images/icons/social/facebook.svg" alt="Facebook icon" class="h-4 w-4 mr-2">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 TeQtos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ai-chat.js"></script>
+</body>
+</html>
